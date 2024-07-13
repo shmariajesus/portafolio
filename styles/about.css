@@ -1,0 +1,48 @@
+/*Sección About*/
+section.about {
+    padding: 16px;
+    gap: 10px;
+    background-color: #917c9a;
+}
+
+.about__container {
+    padding: 16px;
+    gap: 16px;
+}
+
+.about__title {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 25.83px;
+}
+
+.about__paragraph {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16.44px;
+}
+
+/*Desktop*/
+@media (min-width: 1280px) {
+
+    section.about {
+        padding: 64px;
+        padding-top: 50px;
+    }
+
+    .about__container {
+        width: 1136px;
+        margin: auto;
+    }
+
+    .about__title {
+        font-size: 32px;
+        line-height: 37.57px;
+    }
+
+    .about__paragraph {
+        font-size: 16px;
+        line-height: 18.78px;
+        width: 751px;
+    }
+}

@@ -1,0 +1,141 @@
+/* experiencia*/
+section.experience {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    padding: 32px;
+    gap: 16px;
+}
+
+.experience__box {
+    width: 100%;
+    padding-bottom: 16px;
+
+}
+
+.experience__section__title {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 25.83px;
+    text-align: center;
+    color: #fff;
+}
+
+.experience__img {
+    width: 100%;
+}
+
+.experience__title {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18.78px;
+    color: #fff;
+}
+
+.experience__text {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16.44px;
+    color: #fff;
+}
+
+.experiencia__botao--repo {
+    color: #917c9a;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16.44px;
+    width: 108px;
+    height: 40px;
+    padding: 12px 16px 12px 16px;
+    gap: 10px;
+    margin-right: 16px;
+    border: 1px solid #917c9a;
+}
+
+.experience__botao--demo:hover,
+.experiencia__botao--repo:hover,
+.formcontato__botao:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.experience__botao--demo:active,
+.formcontato__botao:active {
+    color: #917c9a;
+    background-color: #ffffff;
+    border-color: rgb(145, 124, 154);
+    transform: scale(1.0);
+}
+
+.experiencia__botao--repo:active {
+    color: #ffffff;
+    background-color: #917c9a;
+    border-color: #ffffff;
+    transform: scale(1.0);
+}
+
+.experience__botao--demo {
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16.44px;
+    width: 100px;
+    height: 40px;
+    padding: 12px 16px 12px 16px;
+    gap: 10px;
+    background-color: #917c9a;
+    border: 1px solid #ffffff;
+}
+
+/*Desktop*/
+@media (min-width: 1280px) {
+    section.experience {
+        width: 1136px;
+        margin: auto;
+        padding-top: 88px;
+    }
+
+    .experience__box:nth-child(3),
+    .experience__box:nth-child(5) {
+        flex-direction: row-reverse;
+    }
+
+    .experience__box:nth-child(odd) {
+        flex-direction: row-reverse;
+    }
+
+    .experience__box {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 16px;
+    }
+
+    .experience__img {
+        width: 752px;
+        height: 406px;
+    }
+
+    .experience__title {
+        font-size: 22px;
+        line-height: 25.83px;
+    }
+
+    .experience__text,
+    .formcontato__subtext {
+        font-size: 16px;
+        line-height: 18.78px;
+    }
+
+    .experience__botao--demo {
+        font-size: 16px;
+        line-height: 18.78px;
+        width: 115px;
+    }
+
+    .experiencia__botao--repo {
+        font-size: 16px;
+        line-height: 18.78px;
+        width: 116px;
+    }
+}

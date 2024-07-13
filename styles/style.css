@@ -1,0 +1,81 @@
+@import url('./menu.css');
+@import url('./title.css');
+@import url('./about.css');
+@import url('./hobbyskils.css');
+@import url('./academics.css');
+@import url('./experience.css');
+@import url('./form.css');
+
+/*CSS Reset / Normalize*/
+/* Hemos disponibilizado el básico de reset de estilos. Si quieren, añadan más informaciones 
+en las secciones señaladas */
+/*Já deixaremos o básico de reset de estilos. Caso queira adicionar mais informações
+coloque nas sessões indicadas*/
+
+:root{
+    /* Inserta la variable de los otros colores inspeccionando el exemplo de figma */
+    /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
+   --cor-de-fundo: #ebebeb;
+   --color-texto: #fff;
+   --color-fondo2: #374357;
+   --color-fondo3: #1f2b3e;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--cor-de-fundo) ;
+    font-family: 'Barlow';
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    background-color: rgb(51, 4, 71);
+}
+ol, ul,li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    color: var(--cor-de-link);
+}
+
+/*En este desafío nosostros gustaríamos que ustedes intentaran utilizar la metodología BEM. 
+
+Lo que es el BEM?
+
+BEM (Bloque, Elemento, Modificador) es un enfoque basado en componentes para el 
+desarrollo web. La idea detrás de esto es dividir la interfaz de usuario en bloques
+independientes. Esto hace que el desarrollo de la interfaz sea fácil y rápido, incluso
+con una interfaz de usuario compleja, y permite la reutilización del código existente sin copiar y pegar.
+
+Enlace de la documentación oficial!
+https://en.bem.info/methodology/quick-start/*/
+
+/*footer*/
+section.footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 102px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18.78px;
+  text-align: center;
+  background-color: #330447;
+  color: #fff;
+}
+  
+/* Vamos a desafiarnos trabajando con responsividad?
+Utiliza las referencias de los breakpoints @media abajo */
+
+
+/*Tablet*/
+@media (min-width: 768px) {
+
+}
+  
+/*Desktop*/
+@media (min-width: 1280px) {
+
+}
